@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <script type="text/javascript" src="main.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <form name="timeForm" onsubmit="validateTimeForm()">
+            <fieldset id="createTime">
+                <legend>Set the time below!</legend>
+                <label>Time: </label>
+                <input id="timeinput" type="time" name="time"
+                        min="00:00" max="24:00" required>
+                <input type="submit">
+                <input type="button" onclick="runTestScenarios()" value="Run Tests">
+            </fieldset>
+        </form>
+        <p class="errorMessage"></p>
+    </body>
+</html>
