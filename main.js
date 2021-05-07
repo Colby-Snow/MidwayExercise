@@ -1,3 +1,5 @@
+var madeCard = false;
+
 function validateTimeForm(){
     console.log("ValidateTimeForm was called");
     var time = $("#timeinput").val();
@@ -67,6 +69,15 @@ function convertTimeToWords(hours, minutes){
 }
 
 function displayTime(timeInWords){
+    //If the card hasn't been made yet add the card.
+    if(!madeCard){
+        $("form").after("<div class=timeCard><ul></ul></div>");
+        madeCard = true;
+    }
+    $(".timeCard ul").append("<li>" + timeInWords + "</li>");
+}
 
-    $("form").after("<div class=timeCard><h2>" + timeInWords + "</h2></div>");
+function clearCard(){
+    $(".timeCard").remove();
+    madeCard = false;
 }

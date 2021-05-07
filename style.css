@@ -1,0 +1,52 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-color: #eeeeee;
+    color: black;
+    font-family:Roboto,sans-serif;
+}
+
+input[type=submit], input[type=button]{
+    background-color: #ffc930;
+    color: #000;
+}
+
+fieldset{
+    margin-top: 5%;
+    padding-left: 1%;
+    margin-left: 1%;
+    width: 30%;
+    background-color: white;
+    border:none;
+}
+
+fieldset label{
+    font-size: large;
+    display: block;
+    margin-top: 2%;
+}
+
+fieldset input[type=text]{
+    width: 50%;
+}
+
+fieldset input[type=submit]{
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.errormessage{
+    display: none;
+}
+
+.timeCard{
+    background-color: white;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+    width: 25%;
+    
+}

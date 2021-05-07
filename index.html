@@ -2,16 +2,18 @@
     <head>
         <script type="text/javascript" src="main.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <form name="timeForm" onsubmit="validateTimeForm()">
             <fieldset id="createTime">
-                <legend>Set the time below!</legend>
+                <h3 align="center">Set the time below!</h3>
                 <label>Time: </label>
                 <input id="timeinput" type="time" name="time"
                         min="00:00" max="24:00" required>
                 <input type="submit">
                 <input type="button" onclick="runTestScenarios()" value="Run Tests">
+                <input type="button" onclick="clearCard()" value="Clear">
             </fieldset>
         </form>
         <p class="errorMessage"></p>
