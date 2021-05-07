@@ -48,11 +48,7 @@ function convertTimeToWords(hours, minutes){
                         "twenty minutes", "twenty-one minutes", "twenty-two minutes","twenty-three minutes","twenty-four minutes","twenty-five minutes","twenty-six minutes","twenty-seven minutes","twenty-eight minutes", "twenty-nine minutes", "half"];
     hourString = hoursArray[hours-1];
 
-    //logic needed:
-    //At 00 minutes must say o'clock
-    //When the minutes are less than or equal to 30 format is "minutes past hour"
-    //When the minutes are greater than 30 format is "(60-minutes) to hour"
-
+    //Sets proper format for sentence structure
     if(minutes == 0){
         var resultString = `The time is ${hourString} o'clock`;
     }
